@@ -41,8 +41,8 @@ export const CategoryBarChart = memo(function CategoryBarChart({
               tick={{ fontSize: 11, fill: 'var(--chart-text)' }}
             />
             <Tooltip
-              formatter={(value: number) =>
-                value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+              formatter={(value) =>
+                Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
               }
               contentStyle={{
                 background: 'var(--chart-tooltip-bg)',

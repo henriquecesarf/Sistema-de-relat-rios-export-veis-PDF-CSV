@@ -34,8 +34,8 @@ export const RevenueLineChart = memo(function RevenueLineChart({
             <XAxis dataKey="month" tick={{ fontSize: 11, fill: 'var(--chart-text)' }} />
             <YAxis tickFormatter={formatCurrency} tick={{ fontSize: 11, fill: 'var(--chart-text)' }} />
             <Tooltip
-              formatter={(value: number) =>
-                value.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+              formatter={(value) =>
+                Number(value).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
               }
               contentStyle={{
                 background: 'var(--chart-tooltip-bg)',

@@ -41,10 +41,10 @@ export const Dashboard = memo(function Dashboard() {
   const { monthlyRevenue, categoryData, statusData } = useChartData(filteredData);
 
   return (
-    <main className="min-h-screen bg-gray-50 dark:bg-gray-950 transition-colors duration-200">
+    <main className="flex-1 w-full">
       <div
         id="dashboard-export"
-        className="max-w-screen-xl mx-auto px-4 py-6 flex flex-col gap-6"
+        className="w-full max-w-screen-xl mx-auto px-6 py-6 flex flex-col gap-6"
       >
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
           <div>

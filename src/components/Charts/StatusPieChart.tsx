@@ -48,7 +48,7 @@ export const StatusPieChart = memo(function StatusPieChart({
               ))}
             </Pie>
             <Tooltip
-              formatter={(value: number, name: string) => [value, name]}
+              formatter={(value, name) => [Number(value), String(name)]}
               contentStyle={{
                 background: 'var(--chart-tooltip-bg)',
                 border: '1px solid var(--chart-tooltip-border)',
